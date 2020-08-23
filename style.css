@@ -1,0 +1,18 @@
+input, textarea {
+    display: block;
+}
+
+textarea {
+    width: 500px;
+    height: 160px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+label {
+    vertical-align:  top;
+    font-weight: bold;
+}
+
+.alert {
+    border: 1px solid red;
+}

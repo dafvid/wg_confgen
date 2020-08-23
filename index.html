@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireguard Manager</title>
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="lib/nacl-fast.min.js"></script>
+    <script src="lib/nacl-util.min.js"></script>
+    <script src="lib/qrious.min.js"></script>
+</head>
+
+<body>
+    Local ip <input type="text" id="localIp"/>
+    Local route <input type="text" id="localRoute" value="/32"/>
+    Server host <input type="text" id="serverIp"/>
+    Server route <input type="text" id="serverRoute" value="0.0.0.0/0"/>
+    Server key <input type="text" id="serverKey"/>
+    <button id="dabutton">Click me!</button>
+    <script  src="wgm.js"></script>
+    <hr/>
+    
+    <label>Local config</label> <textarea id="localConfig"></textarea>
+    <label>Server config</label> <textarea id="serverConfig"></textarea>
+    <canvas id="qrcode"></canvas>
+    </body>
+</html>
